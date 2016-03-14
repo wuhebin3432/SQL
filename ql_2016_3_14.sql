@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50616
 File Encoding         : 65001
 
-Date: 2016-03-14 10:30:21
+Date: 2016-03-14 23:54:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -71,13 +71,13 @@ INSERT INTO `addmodellist` VALUES ('38', 'Product/桩基/测量员/承台桩基�
 INSERT INTO `addmodellist` VALUES ('39', 'Product/桩基/测量员/埋设护筒线.ive', '埋设护筒线', 'other', null);
 INSERT INTO `addmodellist` VALUES ('40', 'Product/桩基/测量员/埋设护筒桩2.ive', '埋设护筒桩2', 'other', null);
 INSERT INTO `addmodellist` VALUES ('41', 'Product/承台/测量员/承台桩棱镜.ive', '承台桩棱镜', 'other', null);
-INSERT INTO `addmodellist` VALUES ('42', 'Product/承台测量员/承台桩.ive', '承台桩', 'other', null);
-INSERT INTO `addmodellist` VALUES ('43', 'Product/承台测量员/承台桩2.ive', '承台桩2', 'other', null);
+INSERT INTO `addmodellist` VALUES ('42', 'Product/承台/测量员/承台桩.ive', '承台桩', 'other', null);
+INSERT INTO `addmodellist` VALUES ('43', 'Product/承台/测量员/承台桩2.ive', '承台桩2', 'other', null);
 INSERT INTO `addmodellist` VALUES ('44', 'Product/承台/测量员/承台轮廓线.ive', '承台轮廓线', 'other', null);
 INSERT INTO `addmodellist` VALUES ('45', 'Product/桥墩/测量员/桥墩桩棱镜.ive', '桥墩桩棱镜', 'other', null);
-INSERT INTO `addmodellist` VALUES ('46', 'Product/桥墩测量员/桥墩桩.ive', '桥墩桩', 'other', null);
+INSERT INTO `addmodellist` VALUES ('46', 'Product/桥墩/测量员/桥墩桩.ive', '桥墩桩', 'other', null);
 INSERT INTO `addmodellist` VALUES ('47', 'Product/桥墩/测量员/桥墩桩2.ive', '桥墩桩2', 'other', null);
-INSERT INTO `addmodellist` VALUES ('48', 'Product/桥墩/测量员/桥墩轮廓线.ive', '桥墩轮廓线', 'other', '265.8985,-64.9426,0.75,0,0,0');
+INSERT INTO `addmodellist` VALUES ('48', 'Product/桥墩/测量员/桥墩轮廓线.ive', '桥墩轮廓线', 'other', null);
 INSERT INTO `addmodellist` VALUES ('49', 'Product/桥墩/测量员/桥墩支垫棱镜.ive', '桥墩支垫棱镜', 'other', null);
 INSERT INTO `addmodellist` VALUES ('50', 'Product/桥墩/测量员/桥墩支垫线.ive', '桥墩支垫线', 'other', null);
 INSERT INTO `addmodellist` VALUES ('51', 'Product/桥墩/测量员/桥墩支垫.ive', '桥墩支垫', 'other', null);
@@ -1416,7 +1416,7 @@ CREATE TABLE `gotolocationlist` (
   `WaitTime` float NOT NULL DEFAULT '0',
   `Help` varchar(255) DEFAULT '0',
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of gotolocationlist
@@ -1466,6 +1466,15 @@ INSERT INTO `gotolocationlist` VALUES ('42', '273.1,-52.5995,5.49089,0.141012,0.
 INSERT INTO `gotolocationlist` VALUES ('43', '262.689,-59.4333,2.46472,-0.17539,0.443878,0.817269,-0.322928,1,1,1', '0', '测量员埋设护筒');
 INSERT INTO `gotolocationlist` VALUES ('44', '182.021,-70.9772,6.10223,0.331707,0.392142,0.655086,0.554127,1,1,1', '0', '测量员交桩复测');
 INSERT INTO `gotolocationlist` VALUES ('45', '271.585,-64.9714,2.43651,0.385236,0.381289,0.591159,0.597279,1,1,1', '0', '测量员承台桩基');
+INSERT INTO `gotolocationlist` VALUES ('46', '263.729,-53.6127,1.78527,0.219732,0.583013,0.731927,0.275857,1,1,1', '0', '测量员承台桩棱镜');
+INSERT INTO `gotolocationlist` VALUES ('47', '273.431,-53.9685,5.25051,0.156138,0.45398,0.829533,0.285302,1,1,1', '0', '测量员承台桩');
+INSERT INTO `gotolocationlist` VALUES ('48', '275.113,-64.9921,8.59294,0.247033,0.24713,0.662663,0.662404,1,1,1', '0', '测量员基坑开挖上口线');
+INSERT INTO `gotolocationlist` VALUES ('49', '267.681,-64.6383,1.50115,0.416092,0.419701,0.57286,0.567934,1,1,1', '0', '测量员桥墩棱镜');
+INSERT INTO `gotolocationlist` VALUES ('50', '268.027,-69.7245,3.07416,0.415976,0.130619,0.269608,0.858612,1,1,1', '0', '测量员桥墩桩');
+INSERT INTO `gotolocationlist` VALUES ('51', '269.63,-65.0028,2.1335,0.321228,0.320407,0.629333,0.630945,1,1,1', '0', '测量员墩身边缘线');
+INSERT INTO `gotolocationlist` VALUES ('52', '267.093,-68.4635,15.256,0.432558,0.311358,0.494315,0.686733,1,1,1', '0', '测量员桥墩支撑垫石棱镜');
+INSERT INTO `gotolocationlist` VALUES ('53', '269.322,-67.1393,17.231,0.289078,0.287613,0.644002,0.647282,1,1,1', '0', '测量员桥墩支撑垫石线');
+INSERT INTO `gotolocationlist` VALUES ('54', '269.419,-66.4711,16.6568,0.324215,0.229623,0.530396,0.748891,1,1,1', '0', '测量员桥墩支撑垫石');
 
 -- ----------------------------
 -- Table structure for gotoscene
@@ -1548,8 +1557,8 @@ INSERT INTO `hightlightlist` VALUES ('6', 'qd2', '1');
 INSERT INTO `hightlightlist` VALUES ('7', 'qd3', '1');
 INSERT INTO `hightlightlist` VALUES ('8', 'qd4', '1');
 INSERT INTO `hightlightlist` VALUES ('9', 'shigongbiandao', '1');
-INSERT INTO `hightlightlist` VALUES ('10', '桩基桩位', '2');
-INSERT INTO `hightlightlist` VALUES ('11', '墩身边缘线', '2');
+INSERT INTO `hightlightlist` VALUES ('10', '桩基桩位', '1');
+INSERT INTO `hightlightlist` VALUES ('11', '墩身边缘线', '1');
 INSERT INTO `hightlightlist` VALUES ('12', '控制桩', '1');
 INSERT INTO `hightlightlist` VALUES ('13', '场地平整桩', '1');
 INSERT INTO `hightlightlist` VALUES ('14', '场地平整桩2', '1');
@@ -1564,17 +1573,17 @@ INSERT INTO `hightlightlist` VALUES ('22', '承台轮廓线', '1');
 INSERT INTO `hightlightlist` VALUES ('23', '桥墩桩', '1');
 INSERT INTO `hightlightlist` VALUES ('24', '桥墩桩2', '1');
 INSERT INTO `hightlightlist` VALUES ('25', '桥墩轮廓线', '1');
-INSERT INTO `hightlightlist` VALUES ('26', '桥墩支垫线', '5');
-INSERT INTO `hightlightlist` VALUES ('27', '桥墩支垫', '5');
+INSERT INTO `hightlightlist` VALUES ('26', '桥墩支垫线', '1');
+INSERT INTO `hightlightlist` VALUES ('27', '桥墩支垫', '1');
 INSERT INTO `hightlightlist` VALUES ('28', '控制桩', '1');
 INSERT INTO `hightlightlist` VALUES ('29', '控制网', '1');
 INSERT INTO `hightlightlist` VALUES ('30', '细部桩', '1');
 INSERT INTO `hightlightlist` VALUES ('31', '细部网', '1');
-INSERT INTO `hightlightlist` VALUES ('32', '征地红线', '1.5');
+INSERT INTO `hightlightlist` VALUES ('32', '征地红线', '1');
 INSERT INTO `hightlightlist` VALUES ('33', '钢筋加工区_钢筋笼1', '1');
 INSERT INTO `hightlightlist` VALUES ('34', '钢筋地面', '1');
-INSERT INTO `hightlightlist` VALUES ('35', '全部桥墩', '1.5');
-INSERT INTO `hightlightlist` VALUES ('36', '水下混凝土灌注口', '2');
+INSERT INTO `hightlightlist` VALUES ('35', '全部桥墩', '1');
+INSERT INTO `hightlightlist` VALUES ('36', '水下混凝土灌注口', '1');
 INSERT INTO `hightlightlist` VALUES ('37', 'terrain_chengtai', '1');
 INSERT INTO `hightlightlist` VALUES ('38', '桩基埋设护筒', '1');
 INSERT INTO `hightlightlist` VALUES ('39', 'terrain_qiaotai', '1');
@@ -2277,17 +2286,17 @@ INSERT INTO `measuretaskitemlist` VALUES ('24', '16', '选取仪器', '选取仪
 INSERT INTO `measuretaskitemlist` VALUES ('25', '16', '放置仪器', '放置仪器', null, '225.436', '-75.9329', '3', '1760', '785', '225.436', '-75.9329', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('26', '17', '放置仪器', '在最近通视的控制桩放置仪器', null, '232.058', '-78.824', '3', '1658', '791', '232.093', '-72.8551', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('27', '17', '桩位的精确测量放样', '到施工现场，进行桩位的精确测量放样', null, '241.811', '-71.9755', '2', '1690', '760', '232.093', '-72.8551', '0');
-INSERT INTO `measuretaskitemlist` VALUES ('28', '25', '放置仪器', '对基坑开挖进行控制测量', null, '232.093', '-72.8551', '3', null, null, '232.093', '-72.8551', '0');
+INSERT INTO `measuretaskitemlist` VALUES ('28', '25', '放置仪器', '对基坑开挖进行控制测量', null, '223.664', '-77.497', '3', '1653', '781', '224.241', '-74.61', '0.0382018');
 INSERT INTO `measuretaskitemlist` VALUES ('29', '1126', '放设桩头凿除线---不做', '放设桩头凿除线', null, '-220', '198', '2', null, null, '-220', '198', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('30', '31', '放置仪器', '在最近通视的控制桩位放置仪器', null, '232.093', '-72.8551', '3', null, null, '232.093', '-72.8551', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('31', '38', '放置仪器', '在最近通视的控制桩上放置仪器', null, '232.093', '-72.8551', '3', null, null, '232.093', '-72.8551', '0');
-INSERT INTO `measuretaskitemlist` VALUES ('32', '40', '放设桥台基坑开挖上口线', '放设桥台基坑开挖上口线', null, '232.093', '-72.8551', '2', null, null, '232.093', '-72.8551', '0');
-INSERT INTO `measuretaskitemlist` VALUES ('33', '42', '放设台后填筑及锥体边缘线', '与台后路基顺接及满足台侧锥体护坡尺寸', null, '-220', '198', '2', '0', '0', '-220', '198', '0');
+INSERT INTO `measuretaskitemlist` VALUES ('32', '1111140', '放设桥台基坑开挖上口线', '放设桥台基坑开挖上口线', null, '232.093', '-72.8551', '2', null, null, '232.093', '-72.8551', '0');
+INSERT INTO `measuretaskitemlist` VALUES ('33', '1111142', '放设台后填筑及锥体边缘线', '与台后路基顺接及满足台侧锥体护坡尺寸', null, '-220', '198', '2', '0', '0', '-220', '198', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('34', '68', '开会', '到项目部会议室开桩基工前布置会', null, '-220', '198', '3', '0', '0', '-220', '198', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('35', '68', '开桩基工前布置会', '听取桩基工前布置会要求', null, '-197.027', '169.862', '2', '0', '0', '-197.027', '169.862', '0');
-INSERT INTO `measuretaskitemlist` VALUES ('36', '18', '埋设钢护筒放置仪器', '埋设钢护筒放置仪器', null, '232.093', '-72.8551', '3', null, null, '232.093', '-72.8551', '0');
+INSERT INTO `measuretaskitemlist` VALUES ('36', '111118', '埋设钢护筒放置仪器', '埋设钢护筒放置仪器', null, '232.093', '-72.8551', '3', null, null, '232.093', '-72.8551', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('37', '18', '埋设钢护筒', '埋设钢护筒', null, '232.093', '-72.8551', '2', null, null, '232.093', '-72.8551', '0');
-INSERT INTO `measuretaskitemlist` VALUES ('38', '25', '放设基坑开挖上口线', '放置基坑开挖上口线、并确定开挖深度', null, '232.093', '-72.8551', '2', '0', '0', '232.093', '-72.8551', '0');
+INSERT INTO `measuretaskitemlist` VALUES ('38', '25', '放设基坑开挖上口线', '放置基坑开挖上口线、并确定开挖深度', null, '238.827', '-73.8807', '2', '1756', '781', '240.249', '-71.9921', '0.0480075');
 INSERT INTO `measuretaskitemlist` VALUES ('39', '31', '放设墩台中心桩位', '根据中心桩弹出墩台边缘线', null, '232.093', '-72.8551', '2', '0', '0', '232.093', '-72.8551', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('40', '38', '放设支撑垫石中心线', '根据中心线弹出支撑垫石边缘线', null, '232.093', '-72.8551', '2', '0', '0', '232.093', '-72.8551', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('41', '4', '确定总体施工方案', '确定总体施工方案', null, '-123.159', '312.966', '2', null, null, '-123.159', '312.966', '0');
@@ -2318,7 +2327,7 @@ CREATE TABLE `measureworklist` (
   `WorkID` int(11) DEFAULT NULL,
   `OrderID` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=251 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=277 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of measureworklist
@@ -2457,122 +2466,148 @@ INSERT INTO `measureworklist` VALUES ('131', '37', 'ModelHightLight', '57', '12'
 INSERT INTO `measureworklist` VALUES ('132', '37', 'BackToCharacter', '1', '13');
 INSERT INTO `measureworklist` VALUES ('133', '37', 'ShowWidget', '164', '14');
 INSERT INTO `measureworklist` VALUES ('134', '38', 'ShowWidget', '166', '1');
-INSERT INTO `measureworklist` VALUES ('135', '38', 'ModelHightLight', '12', '3');
-INSERT INTO `measureworklist` VALUES ('136', '38', 'DynamicDrawLine', '1', '4');
-INSERT INTO `measureworklist` VALUES ('137', '38', 'ShowWidget', '167', '5');
-INSERT INTO `measureworklist` VALUES ('138', '38', 'AddModel', '41', '6');
-INSERT INTO `measureworklist` VALUES ('139', '38', 'DynamicDrawLine', '4', '7');
-INSERT INTO `measureworklist` VALUES ('140', '38', 'AddModel', '42', '8');
-INSERT INTO `measureworklist` VALUES ('141', '38', 'ModelHightLight', '20', '9');
-INSERT INTO `measureworklist` VALUES ('142', '38', 'AddModel', '43', '10');
-INSERT INTO `measureworklist` VALUES ('143', '38', 'ModelHightLight', '21', '11');
-INSERT INTO `measureworklist` VALUES ('144', '38', 'AddModel', '44', '12');
-INSERT INTO `measureworklist` VALUES ('145', '38', 'ModelHightLight', '22', '13');
-INSERT INTO `measureworklist` VALUES ('146', '38', 'ShowWidget', '168', '14');
-INSERT INTO `measureworklist` VALUES ('147', '39', 'ShowWidget', '170', '3');
-INSERT INTO `measureworklist` VALUES ('148', '39', 'ModelHightLight', '12', '5');
-INSERT INTO `measureworklist` VALUES ('149', '39', 'DynamicDrawLine', '1', '6');
-INSERT INTO `measureworklist` VALUES ('150', '39', 'ShowWidget', '171', '7');
-INSERT INTO `measureworklist` VALUES ('151', '39', 'AddModel', '45', '8');
-INSERT INTO `measureworklist` VALUES ('152', '39', 'DynamicDrawLine', '5', '9');
-INSERT INTO `measureworklist` VALUES ('153', '39', 'AddModel', '46', '10');
-INSERT INTO `measureworklist` VALUES ('154', '39', 'ModelHightLight', '23', '11');
-INSERT INTO `measureworklist` VALUES ('155', '39', 'AddModel', '47', '12');
-INSERT INTO `measureworklist` VALUES ('156', '39', 'ModelHightLight', '24', '13');
-INSERT INTO `measureworklist` VALUES ('157', '39', 'AddModel', '48', '14');
-INSERT INTO `measureworklist` VALUES ('158', '39', 'ModelHightLight', '25', '15');
-INSERT INTO `measureworklist` VALUES ('159', '39', 'ShowWidget', '172', '16');
-INSERT INTO `measureworklist` VALUES ('160', '40', 'ShowWidget', '174', '1');
-INSERT INTO `measureworklist` VALUES ('161', '40', 'ModelHightLight', '12', '3');
-INSERT INTO `measureworklist` VALUES ('162', '40', 'DynamicDrawLine', '1', '4');
-INSERT INTO `measureworklist` VALUES ('163', '40', 'ShowWidget', '175', '5');
-INSERT INTO `measureworklist` VALUES ('164', '40', 'AddModel', '49', '6');
-INSERT INTO `measureworklist` VALUES ('165', '40', 'DynamicDrawLine', '6', '7');
-INSERT INTO `measureworklist` VALUES ('166', '40', 'AddModel', '50', '8');
-INSERT INTO `measureworklist` VALUES ('167', '40', 'ModelHightLight', '26', '9');
-INSERT INTO `measureworklist` VALUES ('168', '40', 'AddModel', '51', '10');
-INSERT INTO `measureworklist` VALUES ('169', '40', 'ModelHightLight', '27', '11');
-INSERT INTO `measureworklist` VALUES ('170', '40', 'ShowWidget', '176', '12');
-INSERT INTO `measureworklist` VALUES ('171', '41', 'ShowImage', '1', '1');
-INSERT INTO `measureworklist` VALUES ('172', '42', 'ShowWidget', '89', '4');
-INSERT INTO `measureworklist` VALUES ('173', '42', 'ShowImage', '1', '5');
-INSERT INTO `measureworklist` VALUES ('174', '43', 'ShowWidget', '89', '4');
-INSERT INTO `measureworklist` VALUES ('175', '43', 'ShowImage', '1', '5');
-INSERT INTO `measureworklist` VALUES ('176', '44', 'ShowWidget', '306', '1');
-INSERT INTO `measureworklist` VALUES ('177', '44', 'GoToLocation', '6', '3');
-INSERT INTO `measureworklist` VALUES ('178', '44', 'ModelHightLight', '12', '4');
-INSERT INTO `measureworklist` VALUES ('179', '44', 'DynamicDrawLine', '1', '5');
-INSERT INTO `measureworklist` VALUES ('180', '44', 'ShowWidget', '310', '6');
-INSERT INTO `measureworklist` VALUES ('181', '44', 'AddModel', '32', '7');
-INSERT INTO `measureworklist` VALUES ('182', '44', 'GoToLocation', '9', '8');
-INSERT INTO `measureworklist` VALUES ('183', '44', 'DynamicDrawLine', '2', '9');
-INSERT INTO `measureworklist` VALUES ('184', '44', 'AddModel', '33', '10');
-INSERT INTO `measureworklist` VALUES ('185', '44', 'ModelHightLight', '13', '11');
-INSERT INTO `measureworklist` VALUES ('186', '44', 'GoToLocation', '41', '12');
-INSERT INTO `measureworklist` VALUES ('187', '44', 'AddModel', '34', '13');
-INSERT INTO `measureworklist` VALUES ('188', '44', 'ModelHightLight', '14', '14');
-INSERT INTO `measureworklist` VALUES ('189', '44', 'AddModel', '35', '15');
-INSERT INTO `measureworklist` VALUES ('190', '44', 'ModelHightLight', '15', '16');
-INSERT INTO `measureworklist` VALUES ('191', '44', 'ShowWidget', '307', '17');
-INSERT INTO `measureworklist` VALUES ('192', '44', 'BackToCharacter', '1', '18');
-INSERT INTO `measureworklist` VALUES ('193', '44', 'RemoveModel', '10', '19');
-INSERT INTO `measureworklist` VALUES ('194', '44', 'RemoveModel', '9', '20');
-INSERT INTO `measureworklist` VALUES ('195', '44', 'RemoveModel', '11', '22');
-INSERT INTO `measureworklist` VALUES ('196', '44', 'RemoveModel', '12', '24');
-INSERT INTO `measureworklist` VALUES ('197', '44', 'RemoveModel', '15', '25');
-INSERT INTO `measureworklist` VALUES ('198', '45', 'ShowWidget', '298', '1');
-INSERT INTO `measureworklist` VALUES ('199', '45', 'ChangeInDoorID', '4', '2');
-INSERT INTO `measureworklist` VALUES ('200', '45', 'SitDown', '1', '3');
-INSERT INTO `measureworklist` VALUES ('201', '45', 'OutDoorEnable', '1', '4');
-INSERT INTO `measureworklist` VALUES ('202', '46', 'ShowWidget', '304', '1');
-INSERT INTO `measureworklist` VALUES ('203', '46', 'OutDoorEnable', '2', '3');
-INSERT INTO `measureworklist` VALUES ('204', '47', 'ShowWidget', '301', '1');
-INSERT INTO `measureworklist` VALUES ('205', '47', 'ChangeInDoorID', '4', '2');
-INSERT INTO `measureworklist` VALUES ('206', '47', 'SitDown', '1', '3');
-INSERT INTO `measureworklist` VALUES ('207', '47', 'OutDoorEnable', '1', '4');
-INSERT INTO `measureworklist` VALUES ('208', '48', 'ShowWidget', '303', '1');
-INSERT INTO `measureworklist` VALUES ('209', '48', 'OutDoorEnable', '2', '3');
-INSERT INTO `measureworklist` VALUES ('210', '49', 'ShowWidget', '300', '1');
-INSERT INTO `measureworklist` VALUES ('211', '49', 'ChangeInDoorID', '4', '2');
-INSERT INTO `measureworklist` VALUES ('212', '49', 'SitDown', '1', '3');
-INSERT INTO `measureworklist` VALUES ('213', '49', 'OutDoorEnable', '1', '4');
-INSERT INTO `measureworklist` VALUES ('214', '50', 'ShowWidget', '302', '1');
-INSERT INTO `measureworklist` VALUES ('215', '50', 'OutDoorEnable', '2', '3');
-INSERT INTO `measureworklist` VALUES ('216', '73', 'ShowWidget', '201', '1');
-INSERT INTO `measureworklist` VALUES ('217', '200', 'ShowWidget', '600', '1');
-INSERT INTO `measureworklist` VALUES ('218', '200', 'ChooseToolFromToolBox', '10', '2');
-INSERT INTO `measureworklist` VALUES ('219', '200', 'AddModel', '200', '3');
-INSERT INTO `measureworklist` VALUES ('220', '200', 'ModelHightLight', '100', '4');
-INSERT INTO `measureworklist` VALUES ('221', '200', 'DynamicDrawLine', '20', '5');
-INSERT INTO `measureworklist` VALUES ('222', '200', 'ShowWidget', '599', '6');
-INSERT INTO `measureworklist` VALUES ('223', '200', 'RemoveModel', '100', '7');
-INSERT INTO `measureworklist` VALUES ('224', '200', 'RemoveModel', '101', '7');
-INSERT INTO `measureworklist` VALUES ('225', '200', 'RemoveModel', '102', '7');
-INSERT INTO `measureworklist` VALUES ('226', '201', 'ShowWidget', '605', '1');
-INSERT INTO `measureworklist` VALUES ('227', '202', 'ShowWidget', '601', '1');
-INSERT INTO `measureworklist` VALUES ('228', '202', 'ChooseToolFromToolBox', '15', '2');
-INSERT INTO `measureworklist` VALUES ('229', '202', 'AddModel', '205', '3');
-INSERT INTO `measureworklist` VALUES ('230', '202', 'AddModel', '206', '3');
-INSERT INTO `measureworklist` VALUES ('231', '202', 'ModelHightLight', '100', '4');
-INSERT INTO `measureworklist` VALUES ('232', '202', 'ModelHightLight', '101', '4');
-INSERT INTO `measureworklist` VALUES ('233', '202', 'DynamicDrawLine', '21', '5');
-INSERT INTO `measureworklist` VALUES ('234', '202', 'DynamicDrawLine', '22', '5');
-INSERT INTO `measureworklist` VALUES ('235', '202', 'ShowWidget', '598', '6');
-INSERT INTO `measureworklist` VALUES ('236', '202', 'RemoveModel', '102', '7');
-INSERT INTO `measureworklist` VALUES ('237', '202', 'RemoveModel', '103', '7');
-INSERT INTO `measureworklist` VALUES ('238', '202', 'RemoveModel', '104', '7');
-INSERT INTO `measureworklist` VALUES ('239', '202', 'RemoveModel', '105', '7');
-INSERT INTO `measureworklist` VALUES ('240', '203', 'ShowWidget', '602', '3');
-INSERT INTO `measureworklist` VALUES ('241', '204', 'ShowWidget', '603', '1');
-INSERT INTO `measureworklist` VALUES ('242', '204', 'ChooseToolFromToolBox', '15', '2');
-INSERT INTO `measureworklist` VALUES ('243', '204', 'AddModel', '205', '3');
-INSERT INTO `measureworklist` VALUES ('244', '204', 'ModelHightLight', '100', '4');
-INSERT INTO `measureworklist` VALUES ('245', '204', 'DynamicDrawLine', '21', '5');
-INSERT INTO `measureworklist` VALUES ('246', '204', 'ShowWidget', '606', '6');
-INSERT INTO `measureworklist` VALUES ('247', '204', 'RemoveModel', '102', '7');
-INSERT INTO `measureworklist` VALUES ('248', '204', 'RemoveModel', '105', '7');
-INSERT INTO `measureworklist` VALUES ('249', '204', 'RemoveModel', '101', '7');
-INSERT INTO `measureworklist` VALUES ('250', '205', 'ShowWidget', '604', '1');
+INSERT INTO `measureworklist` VALUES ('135', '38', 'GoToLocation', '6', '2');
+INSERT INTO `measureworklist` VALUES ('136', '38', 'ModelHightLight', '12', '3');
+INSERT INTO `measureworklist` VALUES ('137', '38', 'DynamicDrawLine', '1', '4');
+INSERT INTO `measureworklist` VALUES ('138', '38', 'ShowWidget', '167', '5');
+INSERT INTO `measureworklist` VALUES ('139', '38', 'AddModel', '41', '6');
+INSERT INTO `measureworklist` VALUES ('140', '38', 'GoToLocation', '46', '7');
+INSERT INTO `measureworklist` VALUES ('141', '38', 'DynamicDrawLine', '4', '8');
+INSERT INTO `measureworklist` VALUES ('142', '38', 'AddModel', '42', '9');
+INSERT INTO `measureworklist` VALUES ('143', '38', 'ModelHightLight', '20', '10');
+INSERT INTO `measureworklist` VALUES ('144', '38', 'AddModel', '43', '11');
+INSERT INTO `measureworklist` VALUES ('145', '38', 'GoToLocation', '47', '12');
+INSERT INTO `measureworklist` VALUES ('146', '38', 'ModelHightLight', '21', '13');
+INSERT INTO `measureworklist` VALUES ('147', '38', 'GoToLocation', '48', '14');
+INSERT INTO `measureworklist` VALUES ('148', '38', 'AddModel', '44', '15');
+INSERT INTO `measureworklist` VALUES ('149', '38', 'ModelHightLight', '22', '16');
+INSERT INTO `measureworklist` VALUES ('150', '38', 'BackToCharacter', '1', '17');
+INSERT INTO `measureworklist` VALUES ('151', '38', 'RemoveModel', '9', '18');
+INSERT INTO `measureworklist` VALUES ('152', '38', 'RemoveModel', '10', '19');
+INSERT INTO `measureworklist` VALUES ('153', '38', 'RemoveModel', '11', '20');
+INSERT INTO `measureworklist` VALUES ('154', '38', 'RemoveModel', '26', '21');
+INSERT INTO `measureworklist` VALUES ('155', '38', 'ShowWidget', '168', '22');
+INSERT INTO `measureworklist` VALUES ('156', '39', 'ShowWidget', '170', '1');
+INSERT INTO `measureworklist` VALUES ('157', '39', 'GoToLocation', '6', '2');
+INSERT INTO `measureworklist` VALUES ('158', '39', 'ModelHightLight', '12', '3');
+INSERT INTO `measureworklist` VALUES ('159', '39', 'DynamicDrawLine', '1', '4');
+INSERT INTO `measureworklist` VALUES ('160', '39', 'ShowWidget', '171', '5');
+INSERT INTO `measureworklist` VALUES ('161', '39', 'AddModel', '45', '6');
+INSERT INTO `measureworklist` VALUES ('162', '39', 'GoToLocation', '49', '7');
+INSERT INTO `measureworklist` VALUES ('163', '39', 'DynamicDrawLine', '5', '8');
+INSERT INTO `measureworklist` VALUES ('164', '39', 'AddModel', '46', '9');
+INSERT INTO `measureworklist` VALUES ('165', '39', 'ModelHightLight', '23', '10');
+INSERT INTO `measureworklist` VALUES ('166', '39', 'AddModel', '47', '11');
+INSERT INTO `measureworklist` VALUES ('167', '39', 'GoToLocation', '50', '12');
+INSERT INTO `measureworklist` VALUES ('168', '39', 'ModelHightLight', '24', '13');
+INSERT INTO `measureworklist` VALUES ('169', '39', 'AddModel', '48', '14');
+INSERT INTO `measureworklist` VALUES ('170', '39', 'GoToLocation', '51', '15');
+INSERT INTO `measureworklist` VALUES ('171', '39', 'ModelHightLight', '25', '16');
+INSERT INTO `measureworklist` VALUES ('172', '39', 'BackToCharacter', '1', '17');
+INSERT INTO `measureworklist` VALUES ('173', '39', 'RemoveModel', '9', '18');
+INSERT INTO `measureworklist` VALUES ('174', '39', 'RemoveModel', '10', '19');
+INSERT INTO `measureworklist` VALUES ('175', '39', 'RemoveModel', '11', '20');
+INSERT INTO `measureworklist` VALUES ('176', '39', 'RemoveModel', '35', '21');
+INSERT INTO `measureworklist` VALUES ('177', '39', 'ShowWidget', '172', '22');
+INSERT INTO `measureworklist` VALUES ('178', '40', 'ShowWidget', '174', '1');
+INSERT INTO `measureworklist` VALUES ('179', '40', 'GoToLocation', '6', '2');
+INSERT INTO `measureworklist` VALUES ('180', '40', 'ModelHightLight', '12', '3');
+INSERT INTO `measureworklist` VALUES ('181', '40', 'DynamicDrawLine', '1', '4');
+INSERT INTO `measureworklist` VALUES ('182', '40', 'ShowWidget', '175', '5');
+INSERT INTO `measureworklist` VALUES ('183', '40', 'AddModel', '49', '6');
+INSERT INTO `measureworklist` VALUES ('184', '40', 'GoToLocation', '52', '7');
+INSERT INTO `measureworklist` VALUES ('185', '40', 'DynamicDrawLine', '6', '8');
+INSERT INTO `measureworklist` VALUES ('186', '40', 'AddModel', '50', '9');
+INSERT INTO `measureworklist` VALUES ('187', '40', 'GoToLocation', '53', '10');
+INSERT INTO `measureworklist` VALUES ('188', '40', 'ModelHightLight', '26', '11');
+INSERT INTO `measureworklist` VALUES ('189', '40', 'AddModel', '51', '12');
+INSERT INTO `measureworklist` VALUES ('190', '40', 'GoToLocation', '54', '13');
+INSERT INTO `measureworklist` VALUES ('191', '40', 'ModelHightLight', '27', '14');
+INSERT INTO `measureworklist` VALUES ('192', '40', 'BackToCharacter', '1', '15');
+INSERT INTO `measureworklist` VALUES ('193', '40', 'RemoveModel', '9', '16');
+INSERT INTO `measureworklist` VALUES ('194', '40', 'RemoveModel', '10', '17');
+INSERT INTO `measureworklist` VALUES ('195', '40', 'RemoveModel', '11', '18');
+INSERT INTO `measureworklist` VALUES ('196', '40', 'RemoveModel', '43', '19');
+INSERT INTO `measureworklist` VALUES ('197', '40', 'ShowWidget', '176', '20');
+INSERT INTO `measureworklist` VALUES ('198', '41', 'ShowImage', '1', '1');
+INSERT INTO `measureworklist` VALUES ('199', '42', 'ShowWidget', '89', '4');
+INSERT INTO `measureworklist` VALUES ('200', '42', 'ShowImage', '1', '5');
+INSERT INTO `measureworklist` VALUES ('201', '43', 'ShowWidget', '89', '4');
+INSERT INTO `measureworklist` VALUES ('202', '43', 'ShowImage', '1', '5');
+INSERT INTO `measureworklist` VALUES ('203', '44', 'ShowWidget', '306', '1');
+INSERT INTO `measureworklist` VALUES ('204', '44', 'GoToLocation', '6', '3');
+INSERT INTO `measureworklist` VALUES ('205', '44', 'ModelHightLight', '12', '4');
+INSERT INTO `measureworklist` VALUES ('206', '44', 'DynamicDrawLine', '1', '5');
+INSERT INTO `measureworklist` VALUES ('207', '44', 'ShowWidget', '310', '6');
+INSERT INTO `measureworklist` VALUES ('208', '44', 'AddModel', '32', '7');
+INSERT INTO `measureworklist` VALUES ('209', '44', 'GoToLocation', '9', '8');
+INSERT INTO `measureworklist` VALUES ('210', '44', 'DynamicDrawLine', '2', '9');
+INSERT INTO `measureworklist` VALUES ('211', '44', 'AddModel', '33', '10');
+INSERT INTO `measureworklist` VALUES ('212', '44', 'ModelHightLight', '13', '11');
+INSERT INTO `measureworklist` VALUES ('213', '44', 'GoToLocation', '41', '12');
+INSERT INTO `measureworklist` VALUES ('214', '44', 'AddModel', '34', '13');
+INSERT INTO `measureworklist` VALUES ('215', '44', 'ModelHightLight', '14', '14');
+INSERT INTO `measureworklist` VALUES ('216', '44', 'AddModel', '35', '15');
+INSERT INTO `measureworklist` VALUES ('217', '44', 'ModelHightLight', '15', '16');
+INSERT INTO `measureworklist` VALUES ('218', '44', 'ShowWidget', '307', '17');
+INSERT INTO `measureworklist` VALUES ('219', '44', 'BackToCharacter', '1', '18');
+INSERT INTO `measureworklist` VALUES ('220', '44', 'RemoveModel', '10', '19');
+INSERT INTO `measureworklist` VALUES ('221', '44', 'RemoveModel', '9', '20');
+INSERT INTO `measureworklist` VALUES ('222', '44', 'RemoveModel', '11', '22');
+INSERT INTO `measureworklist` VALUES ('223', '44', 'RemoveModel', '12', '24');
+INSERT INTO `measureworklist` VALUES ('224', '45', 'ShowWidget', '298', '1');
+INSERT INTO `measureworklist` VALUES ('225', '45', 'ChangeInDoorID', '4', '2');
+INSERT INTO `measureworklist` VALUES ('226', '45', 'SitDown', '1', '3');
+INSERT INTO `measureworklist` VALUES ('227', '45', 'OutDoorEnable', '1', '4');
+INSERT INTO `measureworklist` VALUES ('228', '46', 'ShowWidget', '304', '1');
+INSERT INTO `measureworklist` VALUES ('229', '46', 'OutDoorEnable', '2', '3');
+INSERT INTO `measureworklist` VALUES ('230', '47', 'ShowWidget', '301', '1');
+INSERT INTO `measureworklist` VALUES ('231', '47', 'ChangeInDoorID', '4', '2');
+INSERT INTO `measureworklist` VALUES ('232', '47', 'SitDown', '1', '3');
+INSERT INTO `measureworklist` VALUES ('233', '47', 'OutDoorEnable', '1', '4');
+INSERT INTO `measureworklist` VALUES ('234', '48', 'ShowWidget', '303', '1');
+INSERT INTO `measureworklist` VALUES ('235', '48', 'OutDoorEnable', '2', '3');
+INSERT INTO `measureworklist` VALUES ('236', '49', 'ShowWidget', '300', '1');
+INSERT INTO `measureworklist` VALUES ('237', '49', 'ChangeInDoorID', '4', '2');
+INSERT INTO `measureworklist` VALUES ('238', '49', 'SitDown', '1', '3');
+INSERT INTO `measureworklist` VALUES ('239', '49', 'OutDoorEnable', '1', '4');
+INSERT INTO `measureworklist` VALUES ('240', '50', 'ShowWidget', '302', '1');
+INSERT INTO `measureworklist` VALUES ('241', '50', 'OutDoorEnable', '2', '3');
+INSERT INTO `measureworklist` VALUES ('242', '73', 'ShowWidget', '201', '1');
+INSERT INTO `measureworklist` VALUES ('243', '200', 'ShowWidget', '600', '1');
+INSERT INTO `measureworklist` VALUES ('244', '200', 'ChooseToolFromToolBox', '10', '2');
+INSERT INTO `measureworklist` VALUES ('245', '200', 'AddModel', '200', '3');
+INSERT INTO `measureworklist` VALUES ('246', '200', 'ModelHightLight', '100', '4');
+INSERT INTO `measureworklist` VALUES ('247', '200', 'DynamicDrawLine', '20', '5');
+INSERT INTO `measureworklist` VALUES ('248', '200', 'ShowWidget', '599', '6');
+INSERT INTO `measureworklist` VALUES ('249', '200', 'RemoveModel', '100', '7');
+INSERT INTO `measureworklist` VALUES ('250', '200', 'RemoveModel', '101', '7');
+INSERT INTO `measureworklist` VALUES ('251', '200', 'RemoveModel', '102', '7');
+INSERT INTO `measureworklist` VALUES ('252', '201', 'ShowWidget', '605', '1');
+INSERT INTO `measureworklist` VALUES ('253', '202', 'ShowWidget', '601', '1');
+INSERT INTO `measureworklist` VALUES ('254', '202', 'ChooseToolFromToolBox', '15', '2');
+INSERT INTO `measureworklist` VALUES ('255', '202', 'AddModel', '205', '3');
+INSERT INTO `measureworklist` VALUES ('256', '202', 'AddModel', '206', '3');
+INSERT INTO `measureworklist` VALUES ('257', '202', 'ModelHightLight', '100', '4');
+INSERT INTO `measureworklist` VALUES ('258', '202', 'ModelHightLight', '101', '4');
+INSERT INTO `measureworklist` VALUES ('259', '202', 'DynamicDrawLine', '21', '5');
+INSERT INTO `measureworklist` VALUES ('260', '202', 'DynamicDrawLine', '22', '5');
+INSERT INTO `measureworklist` VALUES ('261', '202', 'ShowWidget', '598', '6');
+INSERT INTO `measureworklist` VALUES ('262', '202', 'RemoveModel', '102', '7');
+INSERT INTO `measureworklist` VALUES ('263', '202', 'RemoveModel', '103', '7');
+INSERT INTO `measureworklist` VALUES ('264', '202', 'RemoveModel', '104', '7');
+INSERT INTO `measureworklist` VALUES ('265', '202', 'RemoveModel', '105', '7');
+INSERT INTO `measureworklist` VALUES ('266', '203', 'ShowWidget', '602', '3');
+INSERT INTO `measureworklist` VALUES ('267', '204', 'ShowWidget', '603', '1');
+INSERT INTO `measureworklist` VALUES ('268', '204', 'ChooseToolFromToolBox', '15', '2');
+INSERT INTO `measureworklist` VALUES ('269', '204', 'AddModel', '205', '3');
+INSERT INTO `measureworklist` VALUES ('270', '204', 'ModelHightLight', '100', '4');
+INSERT INTO `measureworklist` VALUES ('271', '204', 'DynamicDrawLine', '21', '5');
+INSERT INTO `measureworklist` VALUES ('272', '204', 'ShowWidget', '606', '6');
+INSERT INTO `measureworklist` VALUES ('273', '204', 'RemoveModel', '102', '7');
+INSERT INTO `measureworklist` VALUES ('274', '204', 'RemoveModel', '105', '7');
+INSERT INTO `measureworklist` VALUES ('275', '204', 'RemoveModel', '101', '7');
+INSERT INTO `measureworklist` VALUES ('276', '205', 'ShowWidget', '604', '1');
 
 -- ----------------------------
 -- Table structure for movecharacterbypath
@@ -3239,7 +3274,7 @@ INSERT INTO `removemodellist` VALUES ('22', '细部网', 'other');
 INSERT INTO `removemodellist` VALUES ('23', '征地红线', 'other');
 INSERT INTO `removemodellist` VALUES ('24', '桩基桩位测量仪器', 'other');
 INSERT INTO `removemodellist` VALUES ('25', '桩基桩位测量人员看仪器', 'other');
-INSERT INTO `removemodellist` VALUES ('26', '承台桩基棱镜', 'other');
+INSERT INTO `removemodellist` VALUES ('26', '承台桩棱镜', 'other');
 INSERT INTO `removemodellist` VALUES ('27', '泥浆池', 'other');
 INSERT INTO `removemodellist` VALUES ('28', '水下混凝土灌注口', 'other');
 INSERT INTO `removemodellist` VALUES ('29', '钢筋地面', 'other');
@@ -3256,6 +3291,7 @@ INSERT INTO `removemodellist` VALUES ('39', '高岭土地面', 'other');
 INSERT INTO `removemodellist` VALUES ('40', '导管', 'other');
 INSERT INTO `removemodellist` VALUES ('41', '脚手架', 'other');
 INSERT INTO `removemodellist` VALUES ('42', '埋设护筒桩', 'other');
+INSERT INTO `removemodellist` VALUES ('43', '桥墩支垫棱镜', 'other');
 INSERT INTO `removemodellist` VALUES ('100', '台座放样', 'tool');
 INSERT INTO `removemodellist` VALUES ('101', '全站仪', 'tool');
 INSERT INTO `removemodellist` VALUES ('102', '棱镜', 'other');
@@ -4623,7 +4659,7 @@ CREATE TABLE `signallogininfolist` (
   `QuitTime` datetime DEFAULT NULL,
   `Point` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=353 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=361 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of signallogininfolist
@@ -4937,6 +4973,14 @@ INSERT INTO `signallogininfolist` VALUES ('349', '李四', '2016-03-13 22:55:03'
 INSERT INTO `signallogininfolist` VALUES ('350', '李四', '2016-03-13 22:59:01', null, null);
 INSERT INTO `signallogininfolist` VALUES ('351', '李四', '2016-03-13 23:03:45', '2016-03-13 23:04:13', '13');
 INSERT INTO `signallogininfolist` VALUES ('352', '李四', '2016-03-13 23:06:17', '2016-03-13 23:07:28', '14');
+INSERT INTO `signallogininfolist` VALUES ('353', '李四', '2016-03-14 21:53:51', '2016-03-14 22:03:06', '9');
+INSERT INTO `signallogininfolist` VALUES ('354', '李四', '2016-03-14 22:35:09', '2016-03-14 22:37:45', '11');
+INSERT INTO `signallogininfolist` VALUES ('355', '李四', '2016-03-14 22:44:08', '2016-03-14 22:46:41', '30');
+INSERT INTO `signallogininfolist` VALUES ('356', '李四', '2016-03-14 22:53:55', '2016-03-14 23:00:57', '33');
+INSERT INTO `signallogininfolist` VALUES ('357', '李四', '2016-03-14 23:29:52', '2016-03-14 23:32:41', '45');
+INSERT INTO `signallogininfolist` VALUES ('358', '李四', '2016-03-14 23:33:02', '2016-03-14 23:34:32', '44');
+INSERT INTO `signallogininfolist` VALUES ('359', '李四', '2016-03-14 23:37:02', '2016-03-14 23:40:02', '22');
+INSERT INTO `signallogininfolist` VALUES ('360', '李四', '2016-03-14 23:52:25', '2016-03-14 23:53:31', '22');
 
 -- ----------------------------
 -- Table structure for singlearchiveinfo
@@ -4950,7 +4994,7 @@ CREATE TABLE `singlearchiveinfo` (
   `CharacterInfo` varchar(255) DEFAULT NULL,
   `TaskItemID` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of singlearchiveinfo
@@ -4972,6 +5016,7 @@ INSERT INTO `singlearchiveinfo` VALUES ('75', '20093432', '2016-03-13 19:11:08',
 INSERT INTO `singlearchiveinfo` VALUES ('76', '20093432', '2016-03-13 19:42:56', null, '223.221,-75.5604,0.0343233,0.53057,-0.467435,-0.467435,0.53057,1,1,1,', '16');
 INSERT INTO `singlearchiveinfo` VALUES ('77', '20093432', '2016-03-13 22:12:22', null, '238.408,-68.7834,0.0614339,0.338407,0.620871,0.620871,0.338407,1,1,1,', '17');
 INSERT INTO `singlearchiveinfo` VALUES ('78', '20093432', '2016-03-13 23:07:24', null, '262.567,-61.3147,5.55112e-17,0.188277,0.68158,0.68158,0.188277,1,1,1,', '20');
+INSERT INTO `singlearchiveinfo` VALUES ('79', '20093432', '2016-03-14 23:34:28', null, '262.567,-61.3147,5.55112e-17,0.188277,0.68158,0.68158,0.188277,1,1,1,', '31');
 
 -- ----------------------------
 -- Table structure for singlearchivemachineinfo
@@ -4983,7 +5028,7 @@ CREATE TABLE `singlearchivemachineinfo` (
   `MachineName` varchar(255) DEFAULT NULL,
   `MatrixInfo` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=361 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=379 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of singlearchivemachineinfo
@@ -5294,6 +5339,24 @@ INSERT INTO `singlearchivemachineinfo` VALUES ('357', '78', 'che02-2', '151.053,
 INSERT INTO `singlearchivemachineinfo` VALUES ('358', '78', 'che01-2', '141.664,95.0021,-0.00122201,0,0,0,1,1,1,1,');
 INSERT INTO `singlearchivemachineinfo` VALUES ('359', '78', 'che09-3', '168.44,153.017,0.00343466,0,0,1,-7.54979e-08,1,1,1,');
 INSERT INTO `singlearchivemachineinfo` VALUES ('360', '78', 'che11-2', '149.136,126.262,0.114697,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('361', '79', 'che12-2', '200.68,164.655,0.138396,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('362', '79', 'che13-2', '205.211,164.655,0.136344,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('363', '79', 'che14-2', '210.248,164.655,0.140827,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('364', '79', 'che15-2', '215.074,166.586,0.0561624,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('365', '79', 'che16-2', '220.264,166.586,0.0561624,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('366', '79', 'che17-2', '225.455,166.586,0.0561624,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('367', '79', 'che18-2', '159.835,97.0433,0.0021283,0,0,-8.74228e-08,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('368', '79', 'che08-2', '160.11,154.095,0.00297737,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('369', '79', 'che10-2', '177.72,153.473,-0.00709653,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('370', '79', 'che07-2', '151.114,153.723,-0.00272691,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('371', '79', 'che06-2', '142.1,153.334,0.00261509,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('372', '79', 'che03-2', '140.409,125.99,0.0199107,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('373', '79', 'che04-2', '157.53,126.405,0.00402141,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('374', '79', 'che05-2', '175.765,126.421,0.00329351,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('375', '79', 'che02-2', '151.053,95.8279,0.0018394,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('376', '79', 'che01-2', '141.664,95.0021,-0.00122201,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('377', '79', 'che09-3', '168.44,153.017,0.00343466,0,0,1,-7.54979e-08,1,1,1,');
+INSERT INTO `singlearchivemachineinfo` VALUES ('378', '79', 'che11-2', '149.136,126.262,0.114697,0,0,0,1,1,1,1,');
 
 -- ----------------------------
 -- Table structure for singlearchivesceneinfo
@@ -5307,7 +5370,7 @@ CREATE TABLE `singlearchivesceneinfo` (
   `NodePath` varchar(255) DEFAULT NULL,
   `MatrixInfo` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=663 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=685 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of singlearchivesceneinfo
@@ -5510,6 +5573,28 @@ INSERT INTO `singlearchivesceneinfo` VALUES ('659', '78', 'terrain', 'jixietingf
 INSERT INTO `singlearchivesceneinfo` VALUES ('660', '78', 'terrain', 'terrain_chengtai', 'Model/MainScene/地形_承台.ive', '0,0,0,0,0,0,1,1,1,1,');
 INSERT INTO `singlearchivesceneinfo` VALUES ('661', '78', 'terrain', 'shigongbiandao', 'Model/MainScene/施工便道_完成.ive', '0,0,0,0,0,0,1,1,1,1,');
 INSERT INTO `singlearchivesceneinfo` VALUES ('662', '78', 'building', 'xiangmubu', 'Model/MainScene/项目部_完成.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('663', '79', 'automachine', 'automachine', 'Model/MainScene/机械.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('664', '79', 'qiaotai', 'terrain_qiaotai', 'Model/MainScene/地形_桥台.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('665', '79', 'other', '控制桩', 'Model/Product/准备/测量员/控制桩.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('666', '79', 'other', '细部桩', 'Model/Product/准备/测量员/细部桩.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('667', '79', 'other', '场地平整桩', 'Model/Product/准备/测量员/场地平整桩.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('668', '79', 'other', '场地平整桩2', 'Model/Product/准备/测量员/场地平整桩2.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('669', '79', 'other', '承台桩基桩', 'Model/Product/桩基/测量员/承台桩基桩.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('670', '79', 'other', '埋设护筒桩2', 'Model/Product/桩基/测量员/埋设护筒桩2.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('671', '79', 'other', '埋设护筒桩3', 'Model/Product/桩基/测量员/埋设护筒桩3.ive', '0,0,0.0829578,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('672', '79', 'other', '承台桩', 'Model/Product/承台/测量员/承台桩.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('673', '79', 'other', '承台桩2', 'Model/Product/承台/测量员/承台桩2.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('674', '79', 'other', '承台轮廓线', 'Model/Product/承台/测量员/承台轮廓线.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('675', '79', 'other', '桥墩桩', 'Model/Product/桥墩/测量员/桥墩桩.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('676', '79', 'other', '桥墩桩2', 'Model/Product/桥墩/测量员/桥墩桩2.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('677', '79', 'other', '桥墩轮廓线', 'Model/Product/桥墩/测量员/桥墩轮廓线.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('678', '79', 'terrain', 'jiaobanzhan', 'Model/MainScene/搅拌站_完成.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('679', '79', 'terrain', 'gangjinjiagongqu', 'Model/MainScene/钢筋加工区_完成.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('680', '79', 'terrain', 'zhiliangchang', 'Model/MainScene/制梁场.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('681', '79', 'terrain', 'jixietingfangqu', 'Model/MainScene/机械停放区_完成.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('682', '79', 'terrain', 'terrain_chengtai', 'Model/MainScene/地形_承台.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('683', '79', 'terrain', 'shigongbiandao', 'Model/MainScene/施工便道_完成.ive', '0,0,0,0,0,0,1,1,1,1,');
+INSERT INTO `singlearchivesceneinfo` VALUES ('684', '79', 'building', 'xiangmubu', 'Model/MainScene/项目部_完成.ive', '0,0,0,0,0,0,1,1,1,1,');
 
 -- ----------------------------
 -- Table structure for singlearchivetoolinfo
@@ -5520,7 +5605,7 @@ CREATE TABLE `singlearchivetoolinfo` (
   `SingleArchiveID` int(11) DEFAULT NULL,
   `ToolName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of singlearchivetoolinfo
@@ -5532,6 +5617,8 @@ INSERT INTO `singlearchivetoolinfo` VALUES ('4', '77', 'GPS');
 INSERT INTO `singlearchivetoolinfo` VALUES ('5', '77', '全站仪');
 INSERT INTO `singlearchivetoolinfo` VALUES ('6', '78', 'GPS');
 INSERT INTO `singlearchivetoolinfo` VALUES ('7', '78', '全站仪');
+INSERT INTO `singlearchivetoolinfo` VALUES ('8', '79', 'GPS');
+INSERT INTO `singlearchivetoolinfo` VALUES ('9', '79', '全站仪');
 
 -- ----------------------------
 -- Table structure for sitdownlist
