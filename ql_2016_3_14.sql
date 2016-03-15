@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50616
 File Encoding         : 65001
 
-Date: 2016-03-14 23:54:32
+Date: 2016-03-15 09:52:17
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -2260,10 +2260,10 @@ CREATE TABLE `measuretaskitemlist` (
 -- ----------------------------
 -- Records of measuretaskitemlist
 -- ----------------------------
-INSERT INTO `measuretaskitemlist` VALUES ('1', '1', '领取施工图', '到指定地点等待施工员领取施工图', null, '-140.104', '293.708', '2', '694', '472', '-140.104', '293.708', '0');
-INSERT INTO `measuretaskitemlist` VALUES ('2', '2', '现场踏勘', '前往施工现场现场，进行现场踏勘', null, '189.912', '-35.1923', '2', '414', '340', '189.912', '-35.1923', '0');
-INSERT INTO `measuretaskitemlist` VALUES ('3', '3', '施工图会审', '到临时驻地会议室开会', null, '-140.104', '293.708', '2', '742', '501', '-140.104', '293.708', '0');
-INSERT INTO `measuretaskitemlist` VALUES ('4', '3', '施工图会审', '开会进行施工图会审', null, '-123.159', '312.966', '2', '751', '472', '-123.159', '312.966', '0');
+INSERT INTO `measuretaskitemlist` VALUES ('1', '1', '领取施工图', '到指定地点等待施工员领取施工图', null, '-140.104', '293.708', '2', '837', '392', '-140.104', '293.708', '0');
+INSERT INTO `measuretaskitemlist` VALUES ('2', '2', '现场踏勘', '前往施工现场现场，进行现场踏勘', null, '189.912', '-35.1923', '2', '1376', '747', '189.995', '-35.2287', '0.126691');
+INSERT INTO `measuretaskitemlist` VALUES ('3', '3', '施工图会审', '到临时驻地会议室开会', null, '-140.104', '293.708', '2', '836', '396', '-140.104', '293.708', '0');
+INSERT INTO `measuretaskitemlist` VALUES ('4', '3', '施工图会审', '开会进行施工图会审', null, '-123.159', '312.966', '2', '903', '368', '-139.887', '293.78', '-0.0661571');
 INSERT INTO `measuretaskitemlist` VALUES ('5', '4', '总体施工方案', '到临时驻地会议室开会', null, '-140.104', '293.708', '2', '760', '447', '-140.104', '293.708', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('6', '5', '项目部选址建设', '到达指定地点等待项目部选址建设', null, '-140.104', '293.708', '2', '751', '472', '-140.104', '293.708', '0');
 INSERT INTO `measuretaskitemlist` VALUES ('7', '6', '拌合站选址建设', '到达指定地点等待拌合站选址建设', null, '-140.104', '293.708', '2', '751', '472', '-140.104', '293.708', '0');
@@ -2336,7 +2336,7 @@ INSERT INTO `measureworklist` VALUES ('1', '1', 'ShowWidget', '76', '1');
 INSERT INTO `measureworklist` VALUES ('2', '1', 'CharacterGoTo', '1', '2');
 INSERT INTO `measureworklist` VALUES ('3', '2', 'ShowWidget', '69', '1');
 INSERT INTO `measureworklist` VALUES ('4', '2', 'MoveCharacterByPath', '1', '2');
-INSERT INTO `measureworklist` VALUES ('5', '2', 'ShowImage', '1', '3');
+INSERT INTO `measureworklist` VALUES ('5', '2', 'ShowImage', '2', '3');
 INSERT INTO `measureworklist` VALUES ('6', '2', 'ShowWidget', '70', '4');
 INSERT INTO `measureworklist` VALUES ('7', '3', 'ShowWidget', '71', '1');
 INSERT INTO `measureworklist` VALUES ('8', '3', 'ChangeInDoorID', '7', '2');
@@ -4659,7 +4659,7 @@ CREATE TABLE `signallogininfolist` (
   `QuitTime` datetime DEFAULT NULL,
   `Point` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=361 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=363 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of signallogininfolist
@@ -4981,6 +4981,8 @@ INSERT INTO `signallogininfolist` VALUES ('357', '李四', '2016-03-14 23:29:52'
 INSERT INTO `signallogininfolist` VALUES ('358', '李四', '2016-03-14 23:33:02', '2016-03-14 23:34:32', '44');
 INSERT INTO `signallogininfolist` VALUES ('359', '李四', '2016-03-14 23:37:02', '2016-03-14 23:40:02', '22');
 INSERT INTO `signallogininfolist` VALUES ('360', '李四', '2016-03-14 23:52:25', '2016-03-14 23:53:31', '22');
+INSERT INTO `signallogininfolist` VALUES ('361', '李四', '2016-03-15 09:42:27', '2016-03-15 09:42:59', '0');
+INSERT INTO `signallogininfolist` VALUES ('362', '李四', '2016-03-15 09:43:17', null, null);
 
 -- ----------------------------
 -- Table structure for singlearchiveinfo
